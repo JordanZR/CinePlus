@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hzrg+OnGqFxvWIuDGsofBAsX2h9OOBMEB4W+abcuM17qFSJjhfx2rGwBuWDIkYKpEolDtO8LYgKm6fntlizvfA==",
+  "dgSpecHash": "b4NZd3L8IxRzc1qWqDpYBXk1UI7LLE8iR6aHPpZC2JpubZ+8gmbvMSidpYF6Qlo8w1g8xCM0/gjCNP7aKDjvFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\cinePlus.csproj",
+  "projectFilePath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\cinePlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jordan\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Jordan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

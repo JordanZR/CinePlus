@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\cinePlus.csproj": {}
+    "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\cinePlus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\cinePlus.csproj": {
+    "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\cinePlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\cinePlus.csproj",
+        "projectUniqueName": "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\cinePlus.csproj",
         "projectName": "cinePlus",
-        "projectPath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\cinePlus.csproj",
+        "projectPath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\cinePlus.csproj",
         "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\cinePlus\\cinePlus\\obj\\",
+        "outputPath": "C:\\Users\\Jordan\\Desktop\\CinePlus\\CinePlus\\cinePlus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",

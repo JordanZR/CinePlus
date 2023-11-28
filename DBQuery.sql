@@ -4,10 +4,32 @@ USE CinePlus;
 -- Crear la tabla Peliculas
 CREATE TABLE Peliculas (
     PeliculaID INT PRIMARY KEY IDENTITY(1,1),
-    PosterImagen VARBINARY(MAX),  -- Almacenar la imagen como datos binarios
+    PosterImagen NVARCHAR(MAX),
     Titulo NVARCHAR(100),
     Sinopsis NVARCHAR(MAX),
     Director NVARCHAR(50),
     Genero NVARCHAR(50),
     puntos int
 );
+
+--Insertar registros
+
+INSERT INTO Peliculas (PosterImagen, Titulo, Sinopsis, Director, Genero, Puntos)
+VALUES
+('link_imagen_1', 'Titanic', 'Romance y drama en un barco', 'James Cameron', 'Romance', 0),
+('link_imagen_2', 'The Shawshank Redemption', 'Drama y crimen en prisión', 'Frank Darabont', 'Drama', 0),
+('link_imagen_3', 'Inception', 'Ciencia ficción y acción en sueños', 'Christopher Nolan', 'Ciencia Ficción', 0),
+('link_imagen_4', 'The Godfather', 'Drama y crimen en la mafia', 'Francis Ford Coppola', 'Drama', 0),
+('link_imagen_5', 'The Dark Knight', 'Acción y crimen en Gotham', 'Christopher Nolan', 'Acción', 0),
+('link_imagen_6', 'Jurassic Park', 'Aventura y ciencia ficción en una isla con dinosaurios', 'Steven Spielberg', 'Aventura', 0),
+('link_imagen_7', 'Forrest Gump', 'Drama y comedia sobre la vida de Forrest', 'Robert Zemeckis', 'Drama', 0),
+('link_imagen_8', 'The Matrix', 'Ciencia ficción y acción en un mundo virtual', 'The Wachowskis', 'Ciencia Ficción', 0),
+('link_imagen_9', 'The Lord of the Rings: The Fellowship of the Ring', 'Aventura y fantasía en la Tierra Media', 'Peter Jackson', 'Aventura', 0),
+('link_imagen_10', 'Pulp Fiction', 'Crimen y comedia en historias entrelazadas', 'Quentin Tarantino', 'Crimen', 0),
+('link_imagen_11', 'The Shawshank Redemption', 'Drama y crimen en prisión', 'Frank Darabont', 'Drama', 0),
+('link_imagen_12', 'Inception', 'Ciencia ficción y acción en sueños', 'Christopher Nolan', 'Ciencia Ficción', 0),
+('link_imagen_13', 'The Godfather', 'Drama y crimen en la mafia', 'Francis Ford Coppola', 'Drama', 0),
+('link_imagen_14', 'The Dark Knight', 'Acción y crimen en Gotham', 'Christopher Nolan', 'Acción', 0),
+('link_imagen_15', 'Jurassic Park', 'Aventura y ciencia ficción en una isla con dinosaurios', 'Steven Spielberg', 'Aventura', 0);
+
+SELECT * FROM Peliculas
