@@ -21,7 +21,7 @@ peliculasController.getPuntos = (req, res)=>{
 
 peliculasController.updatePuntuacion = (req,res)=>{
     
-    query = "UPDATE Peliculas SET puntos = " + req.params.puntos + " WHERE PeliculasID = " + req.params.PeliculaID
+    query = "UPDATE Peliculas SET puntos = " + req.params.puntos + " WHERE PeliculaID = " + req.params.PeliculaID
 
     console.log(query)
     connection.query(query, function (err, result) {

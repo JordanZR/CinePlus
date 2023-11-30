@@ -20,4 +20,6 @@ app.listen(app.get('port'), () => {
 })
 
 module.exports = app
-require('./DB')
+
+//Routes
+require('../src/routes/peliculasRoute')
