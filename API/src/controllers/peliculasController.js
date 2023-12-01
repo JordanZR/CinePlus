@@ -7,7 +7,7 @@ peliculasController.getPeliculas = (req, res)=>{
     query = "SELECT * from Peliculas"
     connection.query(query, function (err, result) {
         if (err) console.log(err)
-        res.json(result)
+        res.json(result.recordsets[0])
     })
 }
 
@@ -15,7 +15,8 @@ peliculasController.getPuntos = (req, res)=>{
     query = "SELECT puntos from Peliculas where PeliculaID = " + req.params.PeliculaID
     connection.query(query, function (err, result) {
         if (err) console.log(err)
-        res.json(result)
+        res.json(result.recordsets[0][0])
+
     })
 }
 
@@ -29,7 +30,7 @@ peliculasController.updatePuntuacion = (req,res)=>{
         query = "SELECT * from Peliculas"
         connection.query(query, function (err, result) {
             if (err) throw err;
-            res.json(result)
+            res.json(result.recordsets[0])
         })
     })
 }
