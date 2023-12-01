@@ -26,10 +26,10 @@ VALUES
 ('link_imagen_8', 'The Matrix', 'Ciencia ficción y acción en un mundo virtual', 'The Wachowskis', 'Ciencia Ficción', 0),
 ('link_imagen_9', 'The Lord of the Rings: The Fellowship of the Ring', 'Aventura y fantasía en la Tierra Media', 'Peter Jackson', 'Aventura', 0),
 ('link_imagen_10', 'Pulp Fiction', 'Crimen y comedia en historias entrelazadas', 'Quentin Tarantino', 'Crimen', 0),
-('link_imagen_11', 'The Shawshank Redemption', 'Drama y crimen en prisión', 'Frank Darabont', 'Drama', 0),
-('link_imagen_12', 'Inception', 'Ciencia ficción y acción en sueños', 'Christopher Nolan', 'Ciencia Ficción', 0),
-('link_imagen_13', 'The Godfather', 'Drama y crimen en la mafia', 'Francis Ford Coppola', 'Drama', 0),
-('link_imagen_14', 'The Dark Knight', 'Acción y crimen en Gotham', 'Christopher Nolan', 'Acción', 0),
-('link_imagen_15', 'Jurassic Park', 'Aventura y ciencia ficción en una isla con dinosaurios', 'Steven Spielberg', 'Aventura', 0);
+('link_imagen_11', 'The Dark Knight Rises', 'Conclusión de la trilogía de Batman', 'Christopher Nolan', 'Acción', 0),
+('link_imagen_12', 'Interstellar', 'Aventura y ciencia ficción en el espacio', 'Christopher Nolan', 'Ciencia Ficción', 0),
+('link_imagen_13', 'Goodfellas', 'Drama y crimen en el mundo de la mafia', 'Martin Scorsese', 'Drama', 0),
+('link_imagen_14', 'Fight Club', 'Drama psicológico y de acción', 'David Fincher', 'Drama', 0),
+('link_imagen_15', 'Inglourious Basterds', 'Bélica y acción en la Segunda Guerra Mundial', 'Quentin Tarantino', 'Acción', 0);
 
-select * from  Peliculas
+SELECT * FROM Peliculas
