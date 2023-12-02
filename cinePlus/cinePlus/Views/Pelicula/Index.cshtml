@@ -59,7 +59,9 @@
                 @Html.DisplayFor(modelItem => item.Puntos)
             </td>
             <td>
-                @Html.ActionLink("Votar!", "Edit", new { /* id=item.PrimaryKey */ })
+                    <form method="post" asp-controller="Pelicula" asp-action="SubirPunto" asp-route-id="@item.PeliculaID">
+                        <button type="submit" class="btn btn-primary">Votar</button>
+                    </form>
             </td>
         </tr>
 }
