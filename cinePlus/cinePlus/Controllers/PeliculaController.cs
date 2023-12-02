@@ -8,7 +8,7 @@ namespace cinePlus.Controllers
     public class PeliculaController : Controller
     {
         Uri getPeliculas = new Uri("http://localhost:4000/peliculas");
-        Uri getPoints, updatePuntos;
+        Uri getPoints, updatePuntos, getTop5;
         int nuevosPuntos;
 
         private readonly HttpClient _httpClient;
@@ -53,6 +53,21 @@ namespace cinePlus.Controllers
 
             response = _httpClient2.GetAsync(_httpClient2.BaseAddress).Result;
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Top5()
+        {
+            List<PeliculaModel> listaPeliculas = new List<PeliculaModel>();
+            getTop5 = new Uri("http://localhost:4000/peliculas/Top5");
+            _httpClient.BaseAddress = getTop5;
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                listaPeliculas = JsonConvert.DeserializeObject<List<PeliculaModel>>(data);
+            }
+            return View(listaPeliculas);
         }
     }
 }
