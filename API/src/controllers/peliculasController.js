@@ -11,6 +11,14 @@ peliculasController.getPeliculas = (req, res)=>{
     })
 }
 
+peliculasController.getTopPeliculas = (req, res)=>{
+    query = "SELECT TOP 5 * FROM Peliculas WHERE Puntos > 0 ORDER BY Puntos DESC"
+    connection.query(query, function (err, result) {
+        if (err) console.log(err)
+        res.json(result.recordsets[0])
+    })
+}
+
 peliculasController.getPuntos = (req, res)=>{
     query = "SELECT * from Peliculas where PeliculaID = " + req.params.PeliculaID
     connection.query(query, function (err, result) {
